@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM function</title>
+</head>
+<body>
+    
+    <div id="main" class="main">
+        Welcome
+    </div>
+    <div class="main">
+        Welcom
+    </div>
+    <script>
+
+        //To get 
+        var x = document.getElementById("main").innerHTML;
+        console.log(x)
+        //To put
+        document.getElementById("main").innerHTML = "<h1>Welcome to Pune </h1>"
+
+        //To get element by using class
+
+        // var x = document.getElementsByClassName("main")[0];
+        // console.log(x)
+
+        //To put
+
+        document.getElementsByClassName("main")[1].innerHTML="<mark>Hello, How are you! </mark>"
+    </script>
+</body>
+</html>
